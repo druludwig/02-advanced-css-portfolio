@@ -2,11 +2,11 @@
     --primary-color: #4b6584;
     --secondary-color: #d1d8e0;
     --bright: #fff;
-    --accent-color-1: #0fb9b1;
+    --accent-color-1: #53ebe3;
 }
 
 body {
-    background-color: var(--);
+    background-color: var(--bright);
     font-family: 'open sans', sans-serif;
     font-size: 16px;
     display: flex;
@@ -69,15 +69,15 @@ section {
 .section-wrapper {
     display: flex;
     align-self: center;
-    /* flex-wrap: wrap; <== add media rule later*/
     width: 80%;
     margin-bottom: 40px;
 }
 
 .section-title {
     border-right: 5px solid var(--primary-color);
-    padding: 0px 15px 0px 20px;
+    padding: 0px 20px 0px 20px;
     width: 20%;
+    text-align: right;
 }
 
 .section-title h2 {
@@ -107,11 +107,32 @@ section {
 }
 
 .work-feature{
-    width: 49%;
+    display: flex;
+    width: 49.5%;
     height: 150px;
     background-color: var(--primary-color);
     border: 5px solid var(--accent-color-1);
     margin-top: 10px;
+}
+
+.work-feature-title {
+    color: var(--primary-color);
+    background-color: var(--accent-color-1);
+    height: 75px;
+    position:relative;
+    padding: 10px 10px 0px 10px;
+    align-content: flex-end;
+}
+
+.work-feature img{
+    width: 100%;
+    height: auto;
+    padding-top: -200px;
+}
+
+.contact-options{
+    padding: 0px 0px 0px 30px;
+    width: 80%;
 }
 
 .contact-options ul {
@@ -139,3 +160,30 @@ ul#list li {
 ul#contactlist li {
     display: inline;
 }
+
+.stargazer {
+    background-image: url(../images/stargazing.jpeg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.calculator {
+    background-image: url(../images/calculator.jpeg);
+    background-size: auto 150px;
+    background-repeat: no-repeat;
+}
+
+.reptile-tracker {
+    background-image: url(../images/gecko.jpeg);
+    background-size: auto 150px;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+    .work {
+        flex-direction: column;
+    }
+    .work-feature {
+        width: 100%;
+    }
+  }
