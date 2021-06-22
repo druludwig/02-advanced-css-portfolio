@@ -15,79 +15,87 @@
             <div class="header-title">
                 <h1>Dru Ludwig</h1>
             </div>
-            <div class="navigation">
+            <nav class="navigation">
                 <ul id="list">
                     <li><a href="#aboutme">&nbsp;About Me&nbsp;</a></li>
                     <li><a href="#work">&nbsp;Work&nbsp;</a></li>
                     <li><a href="#contact">&nbsp;Contact Me&nbsp;</a></li>
                     <li><a href="https://www.linkedin.com/in/druludwig/" target="_new">&nbsp;Resume&nbsp;</a></li>
                 </ul>
-            </div>
+            </nav>
     </header>
 
-    <div>
+    <figure>
+        <!-- This image will be replaced with a WIDE shot outdoor portrait. -->
         <img src="./assets/images/landing-image.jpg" alt="blossoming tree">
-    </div>
+    </figure>
 
     <main>
-        <section>
-            <div class="section-wrapper" id="aboutme">
-                <div class= "section-title">
-                    <h2>About Me</h2>
-                </div>
-                <div class="about-me">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia, augue sit amet sollicitudin cursus, lorem urna volutpat nulla, eu tempus felis risus commodo massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris tristique sem nunc, a facilisis nunc sodales eget. Ut ut tempor lacus, suscipit pulvinar ante. Nulla faucibus sollicitudin finibus. Curabitur sed ligula augue.</p>
-                    <p>&nbsp;<br>Phasellus finibus orci id aliquet blandit. Proin placerat fermentum euismod. Cras vel dui nec massa dapibus vehicula. Aenean auctor pretium velit quis malesuada. Pellentesque quis commodo leo. Aenean volutpat lorem non quam accumsan, et euismod nisi mattis.</p>
-                </div>
+       
+        <section class="section-wrapper" id="aboutme">
+            <div class= "section-title">
+                <h2>About Me</h2>
             </div>
+            <section class="about-me">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia, augue sit amet sollicitudin cursus, lorem urna volutpat nulla, eu tempus felis risus commodo massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris tristique sem nunc, a facilisis nunc sodales eget. Ut ut tempor lacus, suscipit pulvinar ante.</p>
+                <p>&nbsp;<br>Phasellus finibus orci id aliquet blandit. Proin placerat fermentum euismod. Cras vel dui nec massa dapibus vehicula. Aenean auctor pretium velit quis malesuada. Pellentesque quis commodo leo. Aenean volutpat lorem non quam accumsan, et euismod nisi mattis.</p>
+            </section>
+        </section>
 
-            <div class="section-wrapper" id="work">
-                <div class= "section-title">
-                    <h2>Work</h2>
-                </div>
-                <div class="work">
-                    <div class="work-feature-head stargazer">
-                        <div class="work-feature-title">
-                            <h3>Stargazer</h3>
-                            <p><em>Your "clear skies" stargazing weather forecast</em></p>
-                        </div>
-                    </div>
-                    <div class="work-feature calculator">
-                        <div class="work-feature-title">
-                            <h3>Calculator</h3>
-                            <p><em>A simple tool</em></p>
-                        </div>
-                    </div>
-                    <div class="work-feature reptile-tracker">
-                        <div class="work-feature-title">
-                            <h3>Reptile Tracker</h3>
-                            <p><em>Manage reptile husbandry</em></p>
-                        </div>
-                    </div>
-                    <div class="work-feature">
-
-                    </div>
-                    <div class="work-feature">
-
-                    </div>
-
-                </div>
+        <section class="section-wrapper" id="work">
+            <div class= "section-title">
+                <h3>Work</h3>
             </div>
-  
-            <div class="section-wrapper" id="contact">
-                <div class= "section-title">
-                    <h2>Contact Me</h2>
-                </div>
-                <div class="contact-options">
-                    <ul id="contactlist" class="contactlist">
-                        <li><a href="tel:3605551234">360-555-1234</a></li>
-                        <li><a href="mailto:dru@fake-mail.net">&nbsp;Email&nbsp;Me&nbsp;</a></li>
-                        <li><a href="https://www.linkedin.com/in/druludwig/" target="_new">&nbsp;LinkedIn&nbsp;</a></li>
-                        <li><a href="https://github.com/druludwig" target="_new">&nbsp;GitHub&nbsp;</a></li>
-                    </ul>
-                </div>
+            <section class="work">
+                <!-- This method of using JS to make the entire figure a link seemed the best choice after some research. -->
+                <figure class="work-feature-head stargazer" onclick="window.location='https://google.com'">
+                    <figcaption class="work-feature-title">
+                        <h4>Stargazer</h4>
+                        <p><em>Your "clear skies" stargazing weather forecast</em></p>
+                    </figcaption>
+                </figure>
+                <figure class="work-feature calculator" onclick="window.location='https://google.com'">
+                    <figcaption class="work-feature-title">
+                        <h4>Calculator</h4>
+                        <p><em>A simple tool</em></p>
+                    </figcaption>
+                </figure>
+                <figure class="work-feature reptile-tracker" onclick="window.location='https://google.com'">
+                    <figcaption class="work-feature-title">
+                        <h4>Reptile Tracker</h4>
+                        <p><em>Manage reptile husbandry</em></p>
+                    </figcaption>
+                </figure>
+                <figure class="work-feature homestead" onclick="window.location='https://google.com'">
+                    <figcaption class="work-feature-title">
+                        <h4>Homestead Tracker</h4>
+                        <p><em>Manage rural properties</em></p>
+                    </figcaption>
+                </figure>
+                <figure class="work-feature travel" onclick="window.location='https://google.com'">
+                    <figcaption class="work-feature-title">
+                        <h4>Travel Guide</h4>
+                        <p><em>How to plan a getaway</em></p>
+                    </figcaption>
+                </figure>
+
+            </section>
+        </section>
+
+        <footer class="section-wrapper" id="contact">
+            <div class= "section-title">
+                <h5>Contact Me</h5>
             </div>
-         </section>
+            <section class="contact-options">
+                <ul id="contactlist" class="contactlist">
+                    <li><a href="tel:3605551234">360-555-1234</a></li>
+                    <li><a href="mailto:dru@fake-mail.net">&nbsp;Email&nbsp;Me&nbsp;</a></li>
+                    <li><a href="https://www.linkedin.com/in/druludwig/" target="_new">&nbsp;LinkedIn&nbsp;</a></li>
+                    <li><a href="https://github.com/druludwig" target="_new">&nbsp;GitHub&nbsp;</a></li>
+                </ul>
+            </section>
+        </footer>
+        
     </main>
 </body>
 </html>

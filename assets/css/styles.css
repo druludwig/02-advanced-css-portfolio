@@ -13,9 +13,34 @@ body {
     flex-direction: column;
 }
 
+
 h1 {
     font-size: 275%;
     font-weight: 400;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 275%;
+    font-weight: 600;
+}
+
+h3 {
+    color: var(--primary-color);
+    font-size: 275%;
+    font-weight: 600;
+}
+
+h4 {
+    color: var(--primary-color);
+    font-size: 150%;
+    font-weight: 600;
+}
+
+h5 {
+    color: var(--primary-color);
+    font-size: 275%;
+    font-weight: 600;
 }
 
 header {
@@ -37,30 +62,24 @@ header .header-title{
     height: 75px;
 }
 
-header .navigation {
+nav {
     align-self: center;
     margin: 1px 25px 0px 0px;
 }
 
-header .navigation ul {
-    display: inline;
-    list-style-type: none;
-}
-
-header .navigation ul a {
+nav ul a {
+    margin-right: 20px;
     color: var(--bright);
-    font-size: 20px;
     text-decoration: none;
     border-bottom: 4px solid var(--bright);
-    margin-right: 20px;
+    display: inline;
+    list-style-type: none;
+    font-size: 20px;
 }
 
 main {
     margin-top: 25px;
     padding: 10px;
-}
-
-section {
     display: flex;
     flex-direction: column;
 }
@@ -77,12 +96,6 @@ section {
     padding: 0px 20px 0px 20px;
     width: 20%;
     text-align: right;
-}
-
-.section-title h2 {
-    color: var(--primary-color);
-    font-size: 275%;
-    font-weight: 600;
 }
 
 .about-me {
@@ -104,8 +117,8 @@ section {
     height: 350px;
     background-color: var(--primary-color);
     border: 5px solid var(--accent-color-1);
-    margin-bottom: 10px;
     align-self: flex-end;
+    cursor: pointer;
 }
 
 .work-feature{
@@ -127,20 +140,21 @@ section {
     align-self: flex-end;
 }
 
-.work-feature img{
-    width: 100%;
-    height: auto;
-    padding-top: -200px;
+/* Hover effects */
+.work-feature-head:hover,
+.work-feature:hover{
+    opacity: 0.75;
 }
 
 .contact-options{
+    display: flex;
     padding: 0px 0px 0px 30px;
     width: 80%;
 }
 
 .contact-options ul {
     text-decoration: none;
-    margin-top: 50px;
+    align-self: center;
 }
 
 .contact-options ul a {
@@ -156,32 +170,45 @@ section {
     color: var(--primary-color);
 }
 
-ul#list li {
-    display: inline;
-}
-
-ul#contactlist li {
-    display: inline;
-}
-
 .stargazer {
     background-image: url(../images/stargazing.jpeg);
-    background-size: 100% auto;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
 .calculator {
     background-image: url(../images/calculator.jpeg);
-    background-size: auto 150px;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
 .reptile-tracker {
     background-image: url(../images/gecko.jpeg);
-    background-size: auto 150px;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
+.homestead {
+    background-image: url(../images/rural-home.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.travel {
+    background-image: url(../images/ecuador.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/* Inline list */
+ul#list li {
+    display: inline;
+}
+ul#contactlist li {
+    display: inline;
+}
+
+/* Responsive Rules */
 @media only screen and (max-width: 768px) {
     .work {
         flex-direction: column;
